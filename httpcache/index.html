@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="go-import"
-        content="pkg.lovergne.dev/httpcache git https://github.com/TheBigRoomXXL/httpcache">
+    <meta charset="utf-8">
+    <title>pkg.lovergne.dev/httpcache</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    pkg.lovergne.dev/httpcache/ git https://github.com/TheBigRoomXXL/httpcache
+    <h1></h1>
+    <header>
+        <h1>Available Packages</h1>
+    </header>
+    <main>
+        <p>
+            HTTPCache is disctributed as multiple go modules from the same monorepos. This
+            provide dependencies isolation for the various cache storage implementation.
+        </p>
+        <ul>
+            <li>
+                <a href=/core>
+                    <h2>httpcache/core</h2>
+                </a>
+                <br>
+                <small>
+                    Implementent HTTP Caching (RFC9111) on top of golang http.RoundTripper
+                </small>
+            </li>
+            <li>
+                <a href=/diskv>
+                    <h2>httpcache/diskv</h2>
+                </a>
+                <br>
+                <small>
+                    Provide the HTTPCache storage inteface with diskv.
+                </small>
+            </li>
+            <li>
+                <a href=/otter>
+                    <h2>httpcache/otter</h2>
+                </a>
+                <br>
+                <small>
+                    Provide the HTTPCache storage inteface with otter.
+                </small>
+            </li>
+            <li>
+                <a href=/memcache>
+                    <h2>httpcache/memcache</h2>
+                </a>
+                <br>
+                <small>
+                    Provide the HTTPCache storage inteface with memcache.
+                </small>
+            </li>
+            <li>
+                <a href=/redis>
+                    <h2>httpcache/redis</h2>
+                </a>
+                <br>
+                <small>
+                    Provide the HTTPCache storage inteface with redis.
+                </small>
+            </li>
+        </ul>
+    </main>
 </body>
 
 </html>
